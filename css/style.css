@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Lato";
+  width: 100vw;
+  height: 100Vh;
+}
+
+.main {
+  font-size: 16px;
+}
+
+.header {
+  height: 800px;
+  width: 100vw;
+  background: calc(50% + 12px) center url("../img/bikes/HeaderPicture.png") no-repeat;
+  background-size: cover;
+  padding: 0 0 7.313em 0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2.188em;
+}
+.menu__item {
+  font-size: 0.813em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4d4a59;
+  padding-right: 2em;
+}
+.menu__item:last-child {
+  padding-right: 0px;
+}
+.menu__logo {
+  padding: 0px 4em 0px 4em;
+}
+
+.aboutShop {
+  width: 67.5%;
+  padding: 7.313em 0 8.875em 0;
+  margin: 0 auto;
+}
+.infoBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #38393b;
+  padding: 2.125em 0 2.125em 0;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.text {
+  font-size: 1em;
+  font-weight: 400;
+  color: #848688;
+  text-align: center;
+  line-height: 34px;
+}
+
+.grid {
+  padding: 0 0 7.75em 0;
+}
+.twiterAdd {
+  width: 67.5%;
+  margin: 0 auto;
+  padding: 0 0 11.438em 0;
+}
+.twiterAdd__title {
+  text-transform: none;
+}
+.twiterAdd__title_gray {
+  font-weight: 400;
+  color: #848688;
+}
+.twiterAdd__text {
+  font-style: italic;
+}
+
+.discover {
+  height: 200px;
+  width: 100%;
+  padding: 0 0 6.813em 0;
+}
+.discover__button {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.emailAdd__title {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #848688;
+  font-style: italic;
+}
+.form #email-input {
+  font-size: 1.25em;
+  color: #919191;
+}
+.form #email-input::-webkit-input-placeholder {
+  font-size: 1.25em;
+  color: #919191;
+  font-style: italic;
+}
+.form #email-input::-moz-placeholder {
+  font-size: 1.25em;
+  color: #919191;
+  font-style: italic;
+}
+.form #email-input:-ms-input-placeholder {
+  font-size: 1.25em;
+  color: #919191;
+  font-style: italic;
+}
+.form #email-input::-ms-input-placeholder {
+  font-size: 1.25em;
+  color: #919191;
+  font-style: italic;
+}
+.form #email-input::placeholder {
+  font-size: 1.25em;
+  color: #919191;
+  font-style: italic;
+}
+.address__town {
+  font-size: 1em;
+}
+.address__street {
+  font-size: 0.875em;
+}
+.address__mail-ID {
+  font-size: 0.875em;
+}
+
+.captcha__text {
+  font-size: 0.875em;
+  font-style: italic;
+}
+@media screen and (max-width: 1100px) {
+  .header {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 400px;
+  }
+  .main {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    height: 200px;
+  }
+  .main {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,308 @@
+@import "nullstyle.scss";
+
+$color-title: #38393b;
+$color-text: #848688;
+$color-menu-item: #4d4a59;
+$color-placeholder: #919191;
+
+body {
+    font-family: "Lato";
+    width: 100vw;
+    height: 100Vh;
+}
+
+.main {
+    font-size: 16px;
+}
+
+.header {
+    height: 800px;
+    width: 100vw;
+
+    background: calc(50% + 12px) center url("../img/bikes/HeaderPicture.png")  no-repeat;
+    background-size: cover;
+
+    padding: 0 0 7.313em 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2.188em;
+
+    &__item {
+        font-size: 0.813em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-menu-item;
+
+        padding-right: 2em;
+    }
+
+    &__item:last-child {
+        padding-right: 0px;
+    }
+
+    &__logo {
+        padding: 0px 4em 0px 4em;
+    }
+}
+
+.aboutShop {
+    width: 67.5%;
+
+    padding: 7.313em 0 8.875em 0;
+    margin: 0 auto;
+ 
+    &__pic {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+
+.infoBlock {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.pic {
+}
+
+.title {
+    font-size: 1.125em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $color-title;
+
+    padding: 2.125em 0 2.125em 0;
+
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+.text {
+    font-size: 1em;
+    font-weight: 400;
+    color: $color-text;
+
+    text-align: center;
+
+    line-height: 34px;
+}
+
+.grid {
+
+    padding: 0 0 7.75em 0;
+    
+
+    &__pic {
+
+        &_big {
+        }
+
+        &_small {
+        }
+
+        &_medium {
+        }
+    }
+
+    &__item {
+    }
+}
+
+.item {
+
+    &__pic {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+
+.twiterAdd {
+
+    width: 67.5%;
+    margin: 0 auto;
+    padding: 0 0 11.438em 0;
+
+    &__pic {
+    }
+
+    &__title {
+        text-transform: none;
+
+        &_gray {
+            font-weight: 400;
+            color: $color-text;
+        }
+    }
+
+    &__text {
+        font-style: italic;
+    }
+}
+
+.pictures {
+
+    &__item {
+
+        &_long1 {
+        }
+
+        &_high1 {
+        }
+
+        &_high2 {
+        }
+
+        &_long2 {
+        }
+    }
+
+    &__item-1 {
+    }
+
+    &__item-2 {
+    }
+
+    &__item-3 {
+    }
+
+    &__item-4 {
+    }
+}
+
+.discover {
+    height: 200px;
+    width: 100%;
+    padding: 0 0 6.813em 0;
+
+    &__button {
+        font-size: 0.875em;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.emailAdd {
+
+    &__pic {
+    }
+
+    &__title {
+        font-size: 1.5em;
+        font-weight: 400;
+        color: $color-text;
+        font-style: italic;
+    }
+
+    &__form {
+    }
+}
+
+.form {
+
+    #email-input {
+        font-size: 1.25em;
+        color: $color-placeholder;
+    }
+
+    #email-input::placeholder {
+        font-size: 1.25em;
+        color: $color-placeholder;
+        font-style: italic;
+    }
+
+    &__button {
+    }
+}
+
+.footer {
+
+    &__address {
+    }
+
+    &__socialLinks {
+    }
+
+    &__captcha {
+    }
+}
+
+.address {
+
+    &__town {
+        font-size: 1em;
+    }
+
+    &__street {
+        font-size: 0.875em;
+    }
+
+    &__mail-ID {
+        font-size: 0.875em;
+    }
+}
+
+.socialLinks {
+
+    &__X {
+    }
+
+    &__facebook {
+    }
+
+    &__pinterest {
+    }
+}
+
+.captcha {
+
+    &__text {
+        font-size: 0.875em;
+        font-style: italic;
+    }
+
+    &__logo {
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .header {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        height: 400px;
+    }
+
+    .main {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        height: 200px;
+    }
+
+    .main {
+        font-size: 12px;
+    }
+}
