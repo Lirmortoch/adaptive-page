@@ -80,6 +80,16 @@ body {
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
 }
 
@@ -88,7 +98,7 @@ body {
   width: 100vw;
   background: calc(50% + 12px) center url("../img/bikes/HeaderPicture.png") no-repeat;
   background-size: cover;
-  padding: 0 0 7.313em 0;
+  margin: 0 0 7.313em 0;
 }
 
 .menu {
@@ -101,7 +111,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2.188em;
+  margin: 2.188em 0 0 0;
 }
 .menu__item {
   font-size: 0.813em;
@@ -119,8 +129,7 @@ body {
 
 .aboutShop {
   width: 67.5%;
-  padding: 7.313em 0 8.875em 0;
-  margin: 0 auto;
+  margin: 7.313em 0 8.875em 0;
 }
 .infoBlock {
   display: -webkit-box;
@@ -155,12 +164,12 @@ body {
 }
 
 .grid {
-  padding: 0 0 7.75em 0;
+  width: 100vw;
+  margin: 0 0 7.75em 0;
 }
 .twiterAdd {
   width: 67.5%;
-  margin: 0 auto;
-  padding: 0 0 11.438em 0;
+  margin: 0 0 11.438em 0;
 }
 .twiterAdd__title {
   text-transform: none;
@@ -173,26 +182,74 @@ body {
   font-style: italic;
 }
 
-.discover {
-  height: 200px;
+.pictures {
   width: 100%;
-  padding: 0 0 6.813em 0;
+}
+.discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  width: 100vw;
+  margin: 0 0 6.813em 0;
+  background-color: #2e3338;
 }
 .discover__button {
   font-size: 0.875em;
   text-transform: uppercase;
   color: white;
+  padding: 1.25em 3.625em 1.25em 3.625em;
+  border: 1px solid white;
 }
 
+.emailAdd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 13.125em 0;
+}
+.emailAdd__pic {
+  margin: 0 0 2.438em 0;
+}
 .emailAdd__title {
   font-size: 1.5em;
   font-weight: 400;
   color: #848688;
   font-style: italic;
+  margin: 0 0 2.188em 0;
 }
+.emailAdd__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
 .form #email-input {
+  width: 400px;
+  height: 70px;
+  border: 1px solid #d3d6d8;
+  padding: 0 0 0 1.75em;
   font-size: 1.25em;
-  color: #919191;
 }
 .form #email-input::-webkit-input-placeholder {
   font-size: 1.25em;
@@ -219,14 +276,33 @@ body {
   color: #919191;
   font-style: italic;
 }
+.form__button {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  width: 125px;
+  height: 70px;
+  color: white;
+  font-weight: 300;
+  background-color: #86c19e;
+}
+
+.footer {
+  width: 68.75%;
+  padding: 0 0 6.75em 0;
+}
+.footer__address {
+  color: #848688;
+}
 .address__town {
   font-size: 1em;
 }
 .address__street {
   font-size: 0.875em;
+  font-style: italic;
 }
 .address__mail-ID {
   font-size: 0.875em;
+  font-style: italic;
 }
 
 .captcha__text {
