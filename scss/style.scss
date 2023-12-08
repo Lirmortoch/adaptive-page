@@ -54,6 +54,7 @@ body {
 
     &__logo {
         padding: 0px 4em 0px 4em;
+
     }
 }
 
@@ -79,6 +80,7 @@ body {
 }
 
 .pic {
+    
 }
 
 .title {
@@ -237,7 +239,7 @@ body {
     &__form {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 0.5em;
     }
 }
 
@@ -269,6 +271,8 @@ body {
 
 .footer {
     width: 68.75%;
+    display: flex;
+    flex-flow: row nowrap;
 
     padding: 0 0 6.75em 0;
 
@@ -278,7 +282,7 @@ body {
     }
 
     &__socialLinks {
-        
+        margin: 0px 15.375em 0px 15.375em;
     }
 
     &__captcha {
@@ -287,6 +291,8 @@ body {
 }
 
 .address {
+    width: 25%;
+    line-height: 17.87px;
 
     &__town {
         font-size: 1em;
@@ -304,7 +310,10 @@ body {
 }
 
 .socialLinks {
-    
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.938em;
+
     &__X {
     }
 
@@ -316,13 +325,22 @@ body {
 }
 
 .captcha {
+    width: 25%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.563em;
+    align-items: center;
+    justify-content: end;
 
     &__text {
         font-size: 0.875em;
         font-style: italic;
+        width: 38%;
     }
 
     &__logo {
+        width: max-content;
     }
 }
 

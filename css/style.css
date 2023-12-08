@@ -241,7 +241,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
+  gap: 0.5em;
 }
 
 .form #email-input {
@@ -288,10 +288,24 @@ body {
 
 .footer {
   width: 68.75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   padding: 0 0 6.75em 0;
 }
 .footer__address {
   color: #848688;
+}
+.footer__socialLinks {
+  margin: 0px 15.375em 0px 15.375em;
+}
+.address {
+  width: 25%;
+  line-height: 17.87px;
 }
 .address__town {
   font-size: 1em;
@@ -305,10 +319,44 @@ body {
   font-style: italic;
 }
 
+.socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0.938em;
+}
+.captcha {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0.563em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
 .captcha__text {
   font-size: 0.875em;
   font-style: italic;
+  width: 38%;
 }
+.captcha__logo {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 @media screen and (max-width: 1100px) {
   .header {
     height: 600px;
