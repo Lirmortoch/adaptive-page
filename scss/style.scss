@@ -73,7 +73,7 @@ body {
     }
 }
 
-.infoBlock {
+.info-block {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -108,41 +108,7 @@ body {
     line-height: 34px;
 }
 
-.grid {
-    width: 100vw;
-    margin: 0 0 7.75em 0;
-    
 
-    &__pic {
-
-        &_big1 {
-        }
-
-        &_big2 {
-        }
-
-        &_small {
-        }
-
-        &_medium {
-        }
-    }
-
-    &__item {
-    }
-}
-
-.item {
-
-    &__pic {
-    }
-
-    &__title {
-    }
-
-    &__text {
-    }
-}
 
 .twiterAdd {
 
@@ -166,37 +132,7 @@ body {
     }
 }
 
-.pictures {
 
-    width: 100%;
-
-    &__item {
-
-        &_long1 {
-        }
-
-        &_high1 {
-        }
-
-        &_high2 {
-        }
-
-        &_long2 {
-        }
-    }
-
-    &__item-1 {
-    }
-
-    &__item-2 {
-    }
-
-    &__item-3 {
-    }
-
-    &__item-4 {
-    }
-}
 
 .discover {
     display: flex;
@@ -284,7 +220,7 @@ body {
     }
 
     &__socialLinks {
-        margin: 0px 15.375em 0px 15.375em;
+        margin: 0px 22.22% 0px 22.22%;
     }
 
     &__captcha {
@@ -338,7 +274,6 @@ body {
     &__text {
         font-size: 0.875em;
         font-style: italic;
-        width: 38%;
     }
 
     &__logo {
