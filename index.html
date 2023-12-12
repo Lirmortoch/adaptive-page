@@ -13,15 +13,15 @@
     <main class="main">
         <header class="header">
             <nav class="menu">
-                <a class="menu__item">About us</a>
-                <a class="menu__item">.</a>
-                <a class="menu__item">Work</a>
+                <a href="#" class="menu__item">About us</a>
+                <span class="menu__item">.</span>
+                <a href="#" class="menu__item">Work</a>
                 <div class="menu__logo">
                     <img src="img/logos/ShopLogo.svg" alt="shop-logo">
                 </div>
-                <a class="menu__item">Shop</a>
-                <a class="menu__item">.</a>
-                <a class="menu__item">Contact</a>
+                <a href="#" class="menu__item">Shop</a>
+                <span class="menu__item">.</span>
+                <a href="#" class="menu__item">Contact</a>
             </nav>
         </header>
 
@@ -34,7 +34,7 @@
         </div>
 
         <div class="grid">
-            <div class="grid__pic grid__pic_big">
+            <div class="grid__pic grid__pic_big1">
                 <img src="img/bikes/grid/big01/Logo01.svg" alt="">
             </div>
             <div class="grid__item">
@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="grid__pic grid__pic_big">
+            <div class="grid__pic grid__pic_big2">
                 <img src="img/bikes/grid/big02/Logo02.svg" alt="">
             </div>
 
@@ -125,7 +125,7 @@
         </div>
 
         <div class="discover">
-            <a class="discover__button">Discover the shop</a>
+            <a href="#" class="discover__button">Discover the shop</a>
         </div>
 
         <div class="emailAdd">
@@ -133,20 +133,20 @@
                 <img src="img/logos/ShopLogo.svg" alt="shop-logo">
             </div>
             <h1 class="emailAdd__title">Stay on the saddle!</h1>
-            <form class="emailAdd__form">
-                <input type="email" name="email-input" id="email-input" placeholder="enter your email..">
+            <form class="emailAdd__form form">
+                <input type="email" name="email-input" id="email-input" placeholder="enter your email...">
                 <button type="submit" class="form__button">Go</button>
             </form>
         </div>
 
         <footer class="footer">
-            <div class="footer__address">
-                <p class="address__town">AOD New York</p>
-                <p class="address__street"></p>
-                <p class="address__mail-ID"></p>
-            </div>
-
-            <div class="footer__socialLinks">
+            <p class="footer__address address">
+                AOD New York<br>
+                <span class="address__street">2250 Lexington Avenue</span><br>
+                <span class="address__mail-ID">New York, NY 10035  - info@domain.com</span>
+            </p>
+                       
+            <div class="footer__socialLinks socialLinks">
                 <a href="#" class="socialLinks__X">
                     <img src="img/logos/footer/twitterLogo2.svg" alt="twitter">
                 </a>
@@ -158,11 +158,13 @@
                 </a>
             </div>
 
-            <div class="footer__captcha">
+            <div class="footer__captcha captcha">
                 <p class="captcha__text">
                     Handcrafted by 
-                    <img src="img/logos/footer/Y E B O Logo.svg" alt="Y E B O" class="captcha__logo">
                 </p>
+                <div class="captcha__logo">
+                    <img src="img/logos/footer/Y E B O Logo.svg" alt="Y E B O">
+                </div>
             </div>
         </footer>
     </main>
