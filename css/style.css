@@ -131,7 +131,7 @@ body {
   width: 67.5%;
   margin: 7.313em 0 8.875em 0;
 }
-.infoBlock {
+.info-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,10 +163,6 @@ body {
   line-height: 34px;
 }
 
-.grid {
-  width: 100vw;
-  margin: 0 0 7.75em 0;
-}
 .twiterAdd {
   width: 67.5%;
   margin: 0 0 11.438em 0;
@@ -182,9 +178,6 @@ body {
   font-style: italic;
 }
 
-.pictures {
-  width: 100%;
-}
 .discover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,7 +294,7 @@ body {
   color: #848688;
 }
 .footer__socialLinks {
-  margin: 0px 15.375em 0px 15.375em;
+  margin: 0px 22.22% 0px 22.22%;
 }
 .address {
   width: 25%;
@@ -349,7 +342,6 @@ body {
 .captcha__text {
   font-size: 0.875em;
   font-style: italic;
-  width: 38%;
 }
 .captcha__logo {
   width: -webkit-max-content;
