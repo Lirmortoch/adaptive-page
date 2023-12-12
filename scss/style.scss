@@ -312,6 +312,12 @@ body {
     .main {
         font-size: 14px;
     }
+
+    .form {
+        #email-input {
+            width: 250px;
+        }
+    }
 }
 
 @media screen and (max-width: 400px) {
