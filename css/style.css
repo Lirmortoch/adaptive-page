@@ -165,7 +165,7 @@ body {
 
 .twiterAdd {
   width: 67.5%;
-  margin: 0 0 11.438em 0;
+  margin: 7.75em 0 11.438em 0;
 }
 .twiterAdd__title {
   text-transform: none;
@@ -176,6 +176,79 @@ body {
 }
 .twiterAdd__text {
   font-style: italic;
+}
+
+.pictures img {
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(533px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(533px, 1fr));
+}
+.grid__pic_big img {
+  width: 10.59%;
+}
+.grid__pic_small {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+.grid__pic_small img {
+  height: 29.26%;
+  width: 100%;
+}
+.grid__pic_medium img {
+  width: 39.02%;
+}
+
+.grid__block {
+  display: grid;
+  grid-template-columns: minmax(533px, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.big1, .big2, .medium1, .medium2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 533px;
+}
+
+.big1 {
+  background-image: url("../img/bikes/grid/big01/Img01.png");
+}
+
+.big2 {
+  background-image: url("../img/bikes/grid/big02/Img02.png");
+}
+
+.medium1 {
+  background-image: url("../img/bikes/grid/medium01/Img01.png");
+}
+
+.medium2 {
+  background-image: url("../img/bikes/grid/medium02.png");
+}
+
+.item__line {
+  width: 50px;
+  height: 1px;
+  background-color: #d7d8d8;
+  justify-self: center;
+  margin: 40px auto 54px;
+}
+
+.item__block {
+  padding: 60px 68px 0px 68px;
 }
 
 .discover {
@@ -378,6 +451,12 @@ body {
   }
   .address {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid__pic_big {
+    grid-column: span 2;
+    grid-row: span 1;
   }
 }
 @media screen and (max-width: 600px) {
