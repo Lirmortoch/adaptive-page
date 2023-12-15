@@ -131,6 +131,7 @@ body {
   width: 67.5%;
   margin: 7.313em 0 8.875em 0;
 }
+
 .info-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +166,7 @@ body {
 
 .twiterAdd {
   width: 67.5%;
-  margin: 0 0 11.438em 0;
+  margin: 7.75em 0 11.438em 0;
 }
 .twiterAdd__title {
   text-transform: none;
@@ -176,6 +177,71 @@ body {
 }
 .twiterAdd__text {
   font-style: italic;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(533px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(533px, 1fr));
+}
+.grid__pic_small {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+.grid__pic_small img {
+  height: 29.26%;
+  width: 100%;
+}
+
+.grid__block {
+  display: grid;
+  grid-template-columns: minmax(533px, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.big1, .big2, .medium1, .medium2 {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 533px;
+}
+
+.big1 {
+  background-image: url("../img/bikes/grid/big01/Img01.png");
+}
+
+.big2 {
+  background-image: url("../img/bikes/grid/big02/Img02.png");
+}
+
+.medium1 {
+  background-image: url("../img/bikes/grid/medium01/Img01.png");
+}
+
+.medium2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.item__line {
+  width: 50px;
+  height: 1px;
+  background-color: #d7d8d8;
+  justify-self: center;
+  margin: 40px auto 54px;
+}
+
+.item__block {
+  padding: 60px 68px 0px 68px;
 }
 
 .discover {
@@ -296,6 +362,7 @@ body {
 .footer__socialLinks {
   margin: 0px 22.22% 0px 22.22%;
 }
+
 .address {
   width: 25%;
   line-height: 17.87px;
@@ -323,6 +390,7 @@ body {
           flex-flow: row nowrap;
   gap: 0.938em;
 }
+
 .captcha {
   width: 25%;
   display: -webkit-box;
@@ -378,6 +446,16 @@ body {
   }
   .address {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid__pic_big {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .pictures__block {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 }
 @media screen and (max-width: 600px) {
