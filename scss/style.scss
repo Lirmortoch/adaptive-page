@@ -132,6 +132,9 @@ body {
 
 .pictures {
 
+    &__block {
+    }
+
     img {
         width: 100%;
     }
@@ -139,35 +142,28 @@ body {
     &__item {
 
         &_long1 {
-            
         }
 
         &_high1 {
-           
         }
 
         &_high2 {
-            
         }
 
         &_long2 {
-            
         }
     }
 
     &__item-1 {
-        
     }
 
     &__item-2 {
     }
 
     &__item-3 {
-        
     }
 
     &__item-4 {
-        
     }
 }
 
@@ -179,9 +175,7 @@ body {
     &__pic {
 
         &_big {
-            img {
-                width: 10.59%;
-            }
+            
         }
 
         &_small {
@@ -193,9 +187,7 @@ body {
         }
 
         &_medium {
-            img {
-                width: 39.02%;
-            }
+            
         }
     }
 }
@@ -207,7 +199,7 @@ body {
 }
 
 .big1, .big2, .medium1, .medium2 {
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 

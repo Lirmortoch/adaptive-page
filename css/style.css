@@ -186,9 +186,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(533px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(533px, 1fr));
 }
-.grid__pic_big img {
-  width: 10.59%;
-}
 .grid__pic_small {
   -ms-flex-item-align: end;
       align-self: end;
@@ -197,10 +194,6 @@ body {
   height: 29.26%;
   width: 100%;
 }
-.grid__pic_medium img {
-  width: 39.02%;
-}
-
 .grid__block {
   display: grid;
   grid-template-columns: minmax(533px, 1fr);
@@ -208,7 +201,7 @@ body {
 }
 
 .big1, .big2, .medium1, .medium2 {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   display: -webkit-box;
