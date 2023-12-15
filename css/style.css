@@ -131,6 +131,7 @@ body {
   width: 67.5%;
   margin: 7.313em 0 8.875em 0;
 }
+
 .info-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,9 +179,6 @@ body {
   font-style: italic;
 }
 
-.pictures img {
-  width: 100%;
-}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(533px, 1fr));
@@ -194,6 +192,7 @@ body {
   height: 29.26%;
   width: 100%;
 }
+
 .grid__block {
   display: grid;
   grid-template-columns: minmax(533px, 1fr);
@@ -228,8 +227,9 @@ body {
   background-image: url("../img/bikes/grid/medium01/Img01.png");
 }
 
-.medium2 {
-  background-image: url("../img/bikes/grid/medium02.png");
+.medium2 img {
+  height: 100%;
+  width: 100%;
 }
 
 .item__line {
@@ -362,6 +362,7 @@ body {
 .footer__socialLinks {
   margin: 0px 22.22% 0px 22.22%;
 }
+
 .address {
   width: 25%;
   line-height: 17.87px;
@@ -389,6 +390,7 @@ body {
           flex-flow: row nowrap;
   gap: 0.938em;
 }
+
 .captcha {
   width: 25%;
   display: -webkit-box;
@@ -450,6 +452,10 @@ body {
   .grid__pic_big {
     grid-column: span 2;
     grid-row: span 1;
+  }
+  .pictures__block {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 }
 @media screen and (max-width: 600px) {
