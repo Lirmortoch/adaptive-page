@@ -98,7 +98,6 @@ body {
   width: 100vw;
   background: calc(50% + 12px) center url("../img/bikes/HeaderPicture.png") no-repeat;
   background-size: cover;
-  margin: 0 0 7.313em 0;
 }
 
 .menu {
@@ -127,7 +126,7 @@ body {
   padding: 0px 4em 0px 4em;
 }
 
-.aboutShop {
+.about-shop {
   width: 67.5%;
   margin: 7.313em 0 8.875em 0;
 }
@@ -143,6 +142,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 67.5%;
 }
 
 .title {
@@ -164,18 +164,18 @@ body {
   line-height: 34px;
 }
 
-.twiterAdd {
+.twiter-add {
   width: 67.5%;
   margin: 7.75em 0 11.438em 0;
 }
-.twiterAdd__title {
+.twiter-add__title {
   text-transform: none;
 }
-.twiterAdd__title_gray {
+.twiter-add__title_gray {
   font-weight: 400;
   color: #848688;
 }
-.twiterAdd__text {
+.twiter-add__text {
   font-style: italic;
 }
 
@@ -199,8 +199,8 @@ body {
   grid-template-rows: 1fr;
 }
 
-.big1, .big2, .medium1, .medium2 {
-  background-size: 100% 100%;
+.big1, .big2, .medium1 {
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -241,7 +241,8 @@ body {
 }
 
 .item__block {
-  padding: 60px 68px 0px 68px;
+  padding: 60px 0px 0px 0px;
+  justify-self: center;
 }
 
 .discover {
@@ -267,7 +268,7 @@ body {
   border: 1px solid white;
 }
 
-.emailAdd {
+.email-add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,17 +284,17 @@ body {
           justify-content: center;
   margin: 0 0 13.125em 0;
 }
-.emailAdd__pic {
+.email-add__pic {
   margin: 0 0 2.438em 0;
 }
-.emailAdd__title {
+.email-add__title {
   font-size: 1.5em;
   font-weight: 400;
   color: #848688;
   font-style: italic;
   margin: 0 0 2.188em 0;
 }
-.emailAdd__form {
+.email-add__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,14 +449,25 @@ body {
     text-align: center;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1600px) {
   .grid__pic_big {
     grid-column: span 2;
     grid-row: span 1;
   }
-  .pictures__block {
+}
+@media screen and (min-width: 1066px) and (max-width: 1599px) {
+  .big2 {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
+  }
+  .small2 {
+    grid-row: 4/6;
+    grid-column: 2/3;
+  }
+}
+@media screen and (min-width: 1066px) and (max-width: 1200px) {
+  .small2 hr.item__line {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -466,6 +478,24 @@ body {
     font-size: 14px;
   }
   .form #email-input {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .dot {
+    display: none;
+  }
+  .menu__logo {
+    display: none;
+  }
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    gap: 20px;
+  }
+  .form__button {
     width: 250px;
   }
 }
