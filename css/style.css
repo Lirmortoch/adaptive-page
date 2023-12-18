@@ -163,7 +163,7 @@ body {
 
 .twitter-add {
   width: 67.5%;
-  margin: 7.75em 0 11.438em 0;
+  margin: 7.75em 0 4.25em 0;
 }
 .twitter-add__title {
   text-transform: none;
@@ -174,6 +174,24 @@ body {
 }
 .twitter-add__text {
   font-style: italic;
+}
+.twitter-add__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  margin: 6.5em 0 0 0;
+}
+
+.dots__dot {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #c8c8c8;
+  border-radius: 100%;
+}
+
+.filled {
+  background-color: #a9aeb1;
 }
 
 .grid {
@@ -503,10 +521,10 @@ body {
     gap: 20px;
   }
   .form__button {
-    width: 90%;
+    width: 80%;
   }
   .form__input {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 400px) {
