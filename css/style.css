@@ -110,6 +110,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 2em;
   margin: 2.188em 0 0 0;
 }
 .menu__item {
@@ -117,13 +118,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #4d4a59;
-  padding-right: 2em;
-}
-.menu__item:last-child {
-  padding-right: 0px;
 }
 .menu__logo {
-  padding: 0px 4em 0px 4em;
+  padding: 0px 2em 0px 2em;
 }
 
 .about-shop {
@@ -164,18 +161,18 @@ body {
   line-height: 34px;
 }
 
-.twiter-add {
+.twitter-add {
   width: 67.5%;
   margin: 7.75em 0 11.438em 0;
 }
-.twiter-add__title {
+.twitter-add__title {
   text-transform: none;
 }
-.twiter-add__title_gray {
+.twitter-add__title_gray {
   font-weight: 400;
   color: #848688;
 }
-.twiter-add__text {
+.twitter-add__text {
   font-style: italic;
 }
 
@@ -195,7 +192,7 @@ body {
 
 .grid__block {
   display: grid;
-  grid-template-columns: minmax(533px, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -237,7 +234,7 @@ body {
   height: 1px;
   background-color: #d7d8d8;
   justify-self: center;
-  margin: 40px auto 54px;
+  margin: 40px 0 54px;
 }
 
 .item__block {
@@ -269,6 +266,7 @@ body {
 }
 
 .email-add {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,43 +293,47 @@ body {
   margin: 0 0 2.188em 0;
 }
 .email-add__form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0.5em;
 }
 
-.form #email-input {
+.form__input {
   width: 400px;
   height: 70px;
   border: 1px solid #d3d6d8;
   padding: 0 0 0 1.75em;
   font-size: 1.25em;
 }
-.form #email-input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   font-size: 1.25em;
   color: #919191;
   font-style: italic;
 }
-.form #email-input::-moz-placeholder {
+.form__input::-moz-placeholder {
   font-size: 1.25em;
   color: #919191;
   font-style: italic;
 }
-.form #email-input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder {
   font-size: 1.25em;
   color: #919191;
   font-style: italic;
 }
-.form #email-input::-ms-input-placeholder {
+.form__input::-ms-input-placeholder {
   font-size: 1.25em;
   color: #919191;
   font-style: italic;
 }
-.form #email-input::placeholder {
+.form__input::placeholder {
   font-size: 1.25em;
   color: #919191;
   font-style: italic;
@@ -347,7 +349,6 @@ body {
 }
 
 .footer {
-  width: 68.75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,17 +356,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 246px;
   padding: 0 0 6.75em 0;
 }
 .footer__address {
   color: #848688;
 }
-.footer__socialLinks {
-  margin: 0px 22.22% 0px 22.22%;
-}
 
 .address {
-  width: 25%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   line-height: 17.87px;
   white-space: nowrap;
 }
@@ -437,9 +444,6 @@ body {
             justify-content: center;
     gap: 20px;
   }
-  .footer__socialLinks {
-    margin: 0px 0px 0px 0px;
-  }
   .captcha {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -461,13 +465,13 @@ body {
     grid-row: span 1;
   }
   .small2 {
-    grid-row: 4/6;
+    grid-row: 4/5;
     grid-column: 2/3;
   }
 }
-@media screen and (min-width: 1066px) and (max-width: 1200px) {
-  .small2 hr.item__line {
-    display: none;
+@media screen and (max-width: 1066px) {
+  .small2 {
+    grid-row: 4/5;
   }
 }
 @media screen and (max-width: 600px) {
@@ -477,15 +481,18 @@ body {
   .main {
     font-size: 14px;
   }
-  .form #email-input {
+  .form__input {
     width: 250px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 550px) {
-  .dot {
+  .menu__logo {
     display: none;
   }
-  .menu__logo {
+  .dot {
     display: none;
   }
   .form {
@@ -496,7 +503,10 @@ body {
     gap: 20px;
   }
   .form__button {
-    width: 250px;
+    width: 90%;
+  }
+  .form__input {
+    width: 90%;
   }
 }
 @media screen and (max-width: 400px) {
