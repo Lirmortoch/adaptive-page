@@ -163,7 +163,7 @@ body {
 
 .twitter-add {
   width: 67.5%;
-  margin: 7.75em 0 11.438em 0;
+  margin: 7.75em 0 4.25em 0;
 }
 .twitter-add__title {
   text-transform: none;
@@ -175,11 +175,29 @@ body {
 .twitter-add__text {
   font-style: italic;
 }
+.twitter-add__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  margin: 6.5em 0 0 0;
+}
+
+.dots__dot {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #c8c8c8;
+  border-radius: 100%;
+}
+
+.dots__dot:first-child {
+  background-color: #a9aeb1;
+}
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(533px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(533px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(530px, 1fr));
 }
 .grid__pic_small {
   -ms-flex-item-align: end;
@@ -240,6 +258,19 @@ body {
 .item__block {
   padding: 60px 0px 0px 0px;
   justify-self: center;
+}
+
+.pictures {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0px;
+}
+
+.item__pic img {
+  width: 100%;
+  height: 100%;
 }
 
 .discover {
@@ -459,6 +490,17 @@ body {
     grid-row: span 1;
   }
 }
+@media screen and (min-width: 1060px) {
+  .first {
+    grid-row: 2/3;
+  }
+  .tall {
+    grid-row: span 2;
+  }
+  .long {
+    grid-column: span 2;
+  }
+}
 @media screen and (min-width: 1066px) and (max-width: 1599px) {
   .big2 {
     grid-column: span 2;
@@ -484,7 +526,7 @@ body {
   .form__input {
     width: 250px;
   }
-  .grid {
+  .grid, .pictures {
     grid-template-columns: 1fr;
   }
 }
@@ -503,10 +545,10 @@ body {
     gap: 20px;
   }
   .form__button {
-    width: 90%;
+    width: 80%;
   }
   .form__input {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 400px) {
