@@ -34,6 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2em;
 
     margin: 2.188em 0 0 0;
 
@@ -42,16 +43,10 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         color: $color-menu-item;
-
-        padding-right: 2em;
-    }
-
-    &__item:last-child {
-        padding-right: 0px;
     }
 
     &__logo {
-        padding: 0px 4em 0px 4em;
+        padding: 0px 2em 0px 2em;
     }
 }
 
@@ -93,7 +88,7 @@ body {
     line-height: 34px;
 }
 
-.twiter-add {
+.twitter-add {
 
     width: 67.5%;
     margin: 7.75em 0 11.438em 0;
@@ -131,7 +126,7 @@ body {
 
 .grid__block {
     display: grid;
-    grid-template-columns: minmax(533px, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -173,7 +168,7 @@ body {
     
     justify-self: center;
 
-    margin: 40px auto 54px;
+    margin: 40px 0 54px;
 }
 
 .item__block {
@@ -202,6 +197,7 @@ body {
 }
 
 .email-add {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -222,14 +218,16 @@ body {
     }
 
     &__form {
+        width: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 0.5em;
     }
 }
 
 .form {
-    #email-input {
+    &__input {
         width: 400px;
         height: 70px;
         border: 1px solid $color-border-input;
@@ -237,7 +235,7 @@ body {
         font-size: 1.25em;
     }
 
-    #email-input::placeholder {
+    &__input::placeholder {
         font-size: 1.25em;
         color: $color-placeholder;
         font-style: italic;
@@ -255,23 +253,21 @@ body {
 }
 
 .footer {
-    width: 68.75%;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 246px;
 
     padding: 0 0 6.75em 0;
 
     &__address {
         color: $color-text;
     }
-
-    &__socialLinks {
-        margin: 0px 22.22% 0px 22.22%;
-    }
 }
 
 .address {
-    width: 25%;
+    width: min-content;
     line-height: 17.87px;
     white-space: nowrap;
 
@@ -326,10 +322,6 @@ body {
         align-items: center;
         justify-content: center;
         gap: 20px;
-
-        &__socialLinks {
-            margin: 0px 0px 0px 0px;
-        }
     }
 
     .captcha {
@@ -358,16 +350,14 @@ body {
 		grid-row: span 1;
     }
     .small2 {
-        grid-row: 4 / 6;
+        grid-row: 4 / 5;
         grid-column: 2 / 3;
     }
 }
 
-@media screen and (min-width: 1066px) and (max-width: 1200px) {
+@media screen and (max-width: 1066px) {
     .small2 {
-        hr.item__line {
-            display: none;
-        }
+        grid-row: 4 / 5;
     }
 }
 
@@ -381,17 +371,22 @@ body {
     }
 
     .form {
-        #email-input {
+        &__input {
             width: 250px;
         }
     }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media screen and (max-width: 550px) {
-    .dot {
+@media screen and (max-width: 550px) {   
+    .menu__logo {
         display: none;
     }
-    .menu__logo {
+
+    .dot {
         display: none;
     }
 
@@ -400,7 +395,10 @@ body {
         gap: 20px;
 
         &__button {
-            width: 250px
+            width: 90%
+        }
+        &__input {
+            width: 90%;
         }
     }
 }
